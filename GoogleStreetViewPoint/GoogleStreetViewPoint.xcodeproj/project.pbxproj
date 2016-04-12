@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EBFFAB203B9B629E3F621B8 /* Pods_GoogleStreetViewPoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8972B619E7DF66DDBFFEBB4D /* Pods_GoogleStreetViewPoint.framework */; };
+		72191B671CA96CEB0075E709 /* CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72191B661CA96CEB0075E709 /* CoreDataProperties.swift */; };
+		7232FD3D1C95998D0019EC55 /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7232FD3C1C95998D0019EC55 /* HRToast+UIView.swift */; };
+		7269B0361C95B66900E58792 /* PulsingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7269B0351C95B66900E58792 /* PulsingLayer.swift */; };
+		7269B03B1C95BCD600E58792 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7269B03A1C95BCD600E58792 /* Extension.swift */; };
+		7269B04B1C9775E000E58792 /* PointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7269B04A1C9775E000E58792 /* PointCell.swift */; };
+		727CD4DD1C943B26001C3F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD4DC1C943B26001C3F30 /* AppDelegate.swift */; };
+		727CD4E21C943B26001C3F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727CD4E01C943B26001C3F30 /* Main.storyboard */; };
+		727CD4E51C943B26001C3F30 /* GoogleStreetViewPoint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 727CD4E31C943B26001C3F30 /* GoogleStreetViewPoint.xcdatamodeld */; };
+		727CD4E71C943B26001C3F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727CD4E61C943B26001C3F30 /* Assets.xcassets */; };
+		727CD4EA1C943B26001C3F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727CD4E81C943B26001C3F30 /* LaunchScreen.storyboard */; };
+		727CD4F51C943B26001C3F30 /* GoogleStreetViewPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD4F41C943B26001C3F30 /* GoogleStreetViewPointTests.swift */; };
+		727CD5001C943B26001C3F30 /* GoogleStreetViewPointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD4FF1C943B26001C3F30 /* GoogleStreetViewPointUITests.swift */; };
+		727CD5151C944B54001C3F30 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD5141C944B54001C3F30 /* PlaceViewController.swift */; };
+		727CD5171C944CB8001C3F30 /* FormPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD5161C944CB8001C3F30 /* FormPlaceViewController.swift */; };
+		727CD5191C944D66001C3F30 /* PointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD5181C944D66001C3F30 /* PointViewController.swift */; };
+		727CD51B1C944E33001C3F30 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD51A1C944E33001C3F30 /* Data.swift */; };
+		727CD5291C958C75001C3F30 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD5251C958C75001C3F30 /* Place.swift */; };
+		727CD52B1C958C75001C3F30 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727CD5271C958C75001C3F30 /* Point.swift */; };
+		728359C81CA1F56D0031DCB4 /* MailApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728359C71CA1F56D0031DCB4 /* MailApi.swift */; };
+		728359CC1CA1FC050031DCB4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728359CA1CA1FC050031DCB4 /* User.swift */; };
+		728359CE1CA207F00031DCB4 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728359CD1CA207F00031DCB4 /* Code.swift */; };
+		7283E0A71CB7FF8600741021 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283E0A61CB7FF8600741021 /* Area.swift */; };
+		7283E0A91CB824CB00741021 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283E0A81CB824CB00741021 /* InfoViewController.swift */; };
+		72E400981C959303000BE92A /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E400931C959303000BE92A /* JVFloatLabeledTextField.m */; };
+		72E400991C959303000BE92A /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E400951C959303000BE92A /* JVFloatLabeledTextView.m */; };
+		72E4009A1C959303000BE92A /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E400971C959303000BE92A /* NSString+TextDirectionality.m */; };
+		8D5F457891D53C6959E23BAE /* libPods-GoogleStreetViewPointTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCABED072F22AD3F89F97251 /* libPods-GoogleStreetViewPointTests.a */; };
+		A63EE44ACE88143E28148923 /* libPods-GoogleStreetViewPointUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 109E0D32D3BF84297B9830E2 /* libPods-GoogleStreetViewPointUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		727CD4F11C943B26001C3F30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 727CD4D11C943B26001C3F30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 727CD4D81C943B26001C3F30;
+			remoteInfo = GoogleStreetViewPoint;
+		};
+		727CD4FC1C943B26001C3F30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 727CD4D11C943B26001C3F30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 727CD4D81C943B26001C3F30;
+			remoteInfo = GoogleStreetViewPoint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DDE43CFAD8661F962CB756A /* Pods-GoogleStreetViewPointUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleStreetViewPointUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleStreetViewPointUITests/Pods-GoogleStreetViewPointUITests.release.xcconfig"; sourceTree = "<group>"; };
+		109E0D32D3BF84297B9830E2 /* libPods-GoogleStreetViewPointUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleStreetViewPointUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4864C79035168886C453DA51 /* Pods-GoogleStreetViewPointUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleStreetViewPointUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleStreetViewPointUITests/Pods-GoogleStreetViewPointUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72191B661CA96CEB0075E709 /* CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataProperties.swift; sourceTree = "<group>"; };
+		7232FD3C1C95998D0019EC55 /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		7269B0351C95B66900E58792 /* PulsingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsingLayer.swift; sourceTree = "<group>"; };
+		7269B03A1C95BCD600E58792 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		7269B04A1C9775E000E58792 /* PointCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCell.swift; sourceTree = "<group>"; };
+		727CD4D91C943B26001C3F30 /* GoogleStreetViewPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleStreetViewPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		727CD4DC1C943B26001C3F30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		727CD4E11C943B26001C3F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		727CD4E41C943B26001C3F30 /* GoogleStreetViewPoint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoogleStreetViewPoint.xcdatamodel; sourceTree = "<group>"; };
+		727CD4E61C943B26001C3F30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		727CD4E91C943B26001C3F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		727CD4EB1C943B26001C3F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727CD4F01C943B26001C3F30 /* GoogleStreetViewPointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleStreetViewPointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		727CD4F41C943B26001C3F30 /* GoogleStreetViewPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleStreetViewPointTests.swift; sourceTree = "<group>"; };
+		727CD4F61C943B26001C3F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727CD4FB1C943B26001C3F30 /* GoogleStreetViewPointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleStreetViewPointUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		727CD4FF1C943B26001C3F30 /* GoogleStreetViewPointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleStreetViewPointUITests.swift; sourceTree = "<group>"; };
+		727CD5011C943B26001C3F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727CD5141C944B54001C3F30 /* PlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		727CD5161C944CB8001C3F30 /* FormPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPlaceViewController.swift; sourceTree = "<group>"; };
+		727CD5181C944D66001C3F30 /* PointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointViewController.swift; sourceTree = "<group>"; };
+		727CD51A1C944E33001C3F30 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		727CD5251C958C75001C3F30 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = ../Place.swift; sourceTree = "<group>"; };
+		727CD5271C958C75001C3F30 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Point.swift; path = ../Point.swift; sourceTree = "<group>"; };
+		728359C51CA1D8350031DCB4 /* GoogleStreetViewPoint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleStreetViewPoint-Bridging-Header.h"; sourceTree = "<group>"; };
+		728359C71CA1F56D0031DCB4 /* MailApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailApi.swift; sourceTree = "<group>"; };
+		728359CA1CA1FC050031DCB4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		728359CD1CA207F00031DCB4 /* Code.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		7283E0A61CB7FF8600741021 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		7283E0A81CB824CB00741021 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		72E400921C959303000BE92A /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		72E400931C959303000BE92A /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		72E400941C959303000BE92A /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		72E400951C959303000BE92A /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		72E400961C959303000BE92A /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		72E400971C959303000BE92A /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		7A9DBB44E075FCC69D30AE54 /* Pods-GoogleStreetViewPointTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleStreetViewPointTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleStreetViewPointTests/Pods-GoogleStreetViewPointTests.release.xcconfig"; sourceTree = "<group>"; };
+		8972B619E7DF66DDBFFEBB4D /* Pods_GoogleStreetViewPoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleStreetViewPoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC06986DF973D7639E4F3AF /* Pods-GoogleStreetViewPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleStreetViewPoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleStreetViewPoint/Pods-GoogleStreetViewPoint.release.xcconfig"; sourceTree = "<group>"; };
+		BCABED072F22AD3F89F97251 /* libPods-GoogleStreetViewPointTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleStreetViewPointTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD2D5313DCB5121B2123A8D /* Pods-GoogleStreetViewPointTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleStreetViewPointTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleStreetViewPointTests/Pods-GoogleStreetViewPointTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF044B64C126CB7F85231EDF /* Pods-GoogleStreetViewPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleStreetViewPoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleStreetViewPoint/Pods-GoogleStreetViewPoint.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		727CD4D61C943B26001C3F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBFFAB203B9B629E3F621B8 /* Pods_GoogleStreetViewPoint.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727CD4ED1C943B26001C3F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5F457891D53C6959E23BAE /* libPods-GoogleStreetViewPointTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727CD4F81C943B26001C3F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63EE44ACE88143E28148923 /* libPods-GoogleStreetViewPointUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1495C720E2977824CFD162D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8972B619E7DF66DDBFFEBB4D /* Pods_GoogleStreetViewPoint.framework */,
+				BCABED072F22AD3F89F97251 /* libPods-GoogleStreetViewPointTests.a */,
+				109E0D32D3BF84297B9830E2 /* libPods-GoogleStreetViewPointUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7232FD3B1C95998D0019EC55 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				7232FD3C1C95998D0019EC55 /* HRToast+UIView.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		7269B0451C97555000E58792 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7269B04A1C9775E000E58792 /* PointCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		727CD4D01C943B26001C3F30 = {
+			isa = PBXGroup;
+			children = (
+				727CD4DB1C943B26001C3F30 /* GoogleStreetViewPoint */,
+				727CD4F31C943B26001C3F30 /* GoogleStreetViewPointTests */,
+				727CD4FE1C943B26001C3F30 /* GoogleStreetViewPointUITests */,
+				727CD4DA1C943B26001C3F30 /* Products */,
+				A02EC16D14C957EC635BF9E5 /* Pods */,
+				1495C720E2977824CFD162D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		727CD4DA1C943B26001C3F30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				727CD4D91C943B26001C3F30 /* GoogleStreetViewPoint.app */,
+				727CD4F01C943B26001C3F30 /* GoogleStreetViewPointTests.xctest */,
+				727CD4FB1C943B26001C3F30 /* GoogleStreetViewPointUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		727CD4DB1C943B26001C3F30 /* GoogleStreetViewPoint */ = {
+			isa = PBXGroup;
+			children = (
+				727CD4DC1C943B26001C3F30 /* AppDelegate.swift */,
+				727CD50D1C943B73001C3F30 /* Config */,
+				727CD50F1C94476F001C3F30 /* Data */,
+				727CD50E1C943B79001C3F30 /* Controller */,
+				72E4009B1C959309000BE92A /* Library */,
+			);
+			path = GoogleStreetViewPoint;
+			sourceTree = "<group>";
+		};
+		727CD4F31C943B26001C3F30 /* GoogleStreetViewPointTests */ = {
+			isa = PBXGroup;
+			children = (
+				727CD4F41C943B26001C3F30 /* GoogleStreetViewPointTests.swift */,
+				727CD4F61C943B26001C3F30 /* Info.plist */,
+			);
+			path = GoogleStreetViewPointTests;
+			sourceTree = "<group>";
+		};
+		727CD4FE1C943B26001C3F30 /* GoogleStreetViewPointUITests */ = {
+			isa = PBXGroup;
+			children = (
+				727CD4FF1C943B26001C3F30 /* GoogleStreetViewPointUITests.swift */,
+				727CD5011C943B26001C3F30 /* Info.plist */,
+			);
+			path = GoogleStreetViewPointUITests;
+			sourceTree = "<group>";
+		};
+		727CD50D1C943B73001C3F30 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				728359C51CA1D8350031DCB4 /* GoogleStreetViewPoint-Bridging-Header.h */,
+				727CD4E01C943B26001C3F30 /* Main.storyboard */,
+				727CD4EB1C943B26001C3F30 /* Info.plist */,
+				727CD4E81C943B26001C3F30 /* LaunchScreen.storyboard */,
+				727CD4E61C943B26001C3F30 /* Assets.xcassets */,
+				728359C71CA1F56D0031DCB4 /* MailApi.swift */,
+				728359CD1CA207F00031DCB4 /* Code.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		727CD50E1C943B79001C3F30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7283E0A81CB824CB00741021 /* InfoViewController.swift */,
+				727CD5141C944B54001C3F30 /* PlaceViewController.swift */,
+				727CD5161C944CB8001C3F30 /* FormPlaceViewController.swift */,
+				727CD5181C944D66001C3F30 /* PointViewController.swift */,
+				7269B0451C97555000E58792 /* Cell */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		727CD50F1C94476F001C3F30 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				727CD4E31C943B26001C3F30 /* GoogleStreetViewPoint.xcdatamodeld */,
+				728359CA1CA1FC050031DCB4 /* User.swift */,
+				727CD5251C958C75001C3F30 /* Place.swift */,
+				7283E0A61CB7FF8600741021 /* Area.swift */,
+				727CD5271C958C75001C3F30 /* Point.swift */,
+				727CD51A1C944E33001C3F30 /* Data.swift */,
+				72191B661CA96CEB0075E709 /* CoreDataProperties.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		72E400911C959303000BE92A /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				72E400921C959303000BE92A /* JVFloatLabeledTextField.h */,
+				72E400931C959303000BE92A /* JVFloatLabeledTextField.m */,
+				72E400941C959303000BE92A /* JVFloatLabeledTextView.h */,
+				72E400951C959303000BE92A /* JVFloatLabeledTextView.m */,
+				72E400961C959303000BE92A /* NSString+TextDirectionality.h */,
+				72E400971C959303000BE92A /* NSString+TextDirectionality.m */,
+			);
+			path = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		72E4009B1C959309000BE92A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7269B0351C95B66900E58792 /* PulsingLayer.swift */,
+				7232FD3B1C95998D0019EC55 /* Toast */,
+				72E400911C959303000BE92A /* JVFloatLabeledTextField */,
+				7269B03A1C95BCD600E58792 /* Extension.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A02EC16D14C957EC635BF9E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF044B64C126CB7F85231EDF /* Pods-GoogleStreetViewPoint.debug.xcconfig */,
+				8AC06986DF973D7639E4F3AF /* Pods-GoogleStreetViewPoint.release.xcconfig */,
+				BCD2D5313DCB5121B2123A8D /* Pods-GoogleStreetViewPointTests.debug.xcconfig */,
+				7A9DBB44E075FCC69D30AE54 /* Pods-GoogleStreetViewPointTests.release.xcconfig */,
+				4864C79035168886C453DA51 /* Pods-GoogleStreetViewPointUITests.debug.xcconfig */,
+				0DDE43CFAD8661F962CB756A /* Pods-GoogleStreetViewPointUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		727CD4D81C943B26001C3F30 /* GoogleStreetViewPoint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727CD5041C943B26001C3F30 /* Build configuration list for PBXNativeTarget "GoogleStreetViewPoint" */;
+			buildPhases = (
+				3D629DBFBCC0704AE83521E8 /* 📦 Check Pods Manifest.lock */,
+				727CD4D51C943B26001C3F30 /* Sources */,
+				727CD4D61C943B26001C3F30 /* Frameworks */,
+				727CD4D71C943B26001C3F30 /* Resources */,
+				4A91E1F4B3D7A397EBCF12EA /* 📦 Embed Pods Frameworks */,
+				5BF2D6598D253542AF327EBE /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleStreetViewPoint;
+			productName = GoogleStreetViewPoint;
+			productReference = 727CD4D91C943B26001C3F30 /* GoogleStreetViewPoint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		727CD4EF1C943B26001C3F30 /* GoogleStreetViewPointTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727CD5071C943B26001C3F30 /* Build configuration list for PBXNativeTarget "GoogleStreetViewPointTests" */;
+			buildPhases = (
+				FD7272ECF86CA5BC00CE4012 /* 📦 Check Pods Manifest.lock */,
+				727CD4EC1C943B26001C3F30 /* Sources */,
+				727CD4ED1C943B26001C3F30 /* Frameworks */,
+				727CD4EE1C943B26001C3F30 /* Resources */,
+				C522611CE0FFD5F13DB2E95E /* 📦 Embed Pods Frameworks */,
+				D95D436746D773624A2F8C70 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				727CD4F21C943B26001C3F30 /* PBXTargetDependency */,
+			);
+			name = GoogleStreetViewPointTests;
+			productName = GoogleStreetViewPointTests;
+			productReference = 727CD4F01C943B26001C3F30 /* GoogleStreetViewPointTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		727CD4FA1C943B26001C3F30 /* GoogleStreetViewPointUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727CD50A1C943B26001C3F30 /* Build configuration list for PBXNativeTarget "GoogleStreetViewPointUITests" */;
+			buildPhases = (
+				0DBBE954C1B8DC355D40FD18 /* 📦 Check Pods Manifest.lock */,
+				727CD4F71C943B26001C3F30 /* Sources */,
+				727CD4F81C943B26001C3F30 /* Frameworks */,
+				727CD4F91C943B26001C3F30 /* Resources */,
+				519090B6A02F9653265B0E79 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				727CD4FD1C943B26001C3F30 /* PBXTargetDependency */,
+			);
+			name = GoogleStreetViewPointUITests;
+			productName = GoogleStreetViewPointUITests;
+			productReference = 727CD4FB1C943B26001C3F30 /* GoogleStreetViewPointUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		727CD4D11C943B26001C3F30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = J7ss;
+				TargetAttributes = {
+					727CD4D81C943B26001C3F30 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = L5CG7ZQ2A9;
+					};
+					727CD4EF1C943B26001C3F30 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 727CD4D81C943B26001C3F30;
+					};
+					727CD4FA1C943B26001C3F30 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 727CD4D81C943B26001C3F30;
+					};
+				};
+			};
+			buildConfigurationList = 727CD4D41C943B26001C3F30 /* Build configuration list for PBXProject "GoogleStreetViewPoint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 727CD4D01C943B26001C3F30;
+			productRefGroup = 727CD4DA1C943B26001C3F30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				727CD4D81C943B26001C3F30 /* GoogleStreetViewPoint */,
+				727CD4EF1C943B26001C3F30 /* GoogleStreetViewPointTests */,
+				727CD4FA1C943B26001C3F30 /* GoogleStreetViewPointUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		727CD4D71C943B26001C3F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727CD4EA1C943B26001C3F30 /* LaunchScreen.storyboard in Resources */,
+				727CD4E71C943B26001C3F30 /* Assets.xcassets in Resources */,
+				727CD4E21C943B26001C3F30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727CD4EE1C943B26001C3F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727CD4F91C943B26001C3F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DBBE954C1B8DC355D40FD18 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D629DBFBCC0704AE83521E8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A91E1F4B3D7A397EBCF12EA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleStreetViewPoint/Pods-GoogleStreetViewPoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		519090B6A02F9653265B0E79 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleStreetViewPointUITests/Pods-GoogleStreetViewPointUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF2D6598D253542AF327EBE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleStreetViewPoint/Pods-GoogleStreetViewPoint-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C522611CE0FFD5F13DB2E95E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleStreetViewPointTests/Pods-GoogleStreetViewPointTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D95D436746D773624A2F8C70 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleStreetViewPointTests/Pods-GoogleStreetViewPointTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD7272ECF86CA5BC00CE4012 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		727CD4D51C943B26001C3F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E400981C959303000BE92A /* JVFloatLabeledTextField.m in Sources */,
+				727CD5151C944B54001C3F30 /* PlaceViewController.swift in Sources */,
+				72E4009A1C959303000BE92A /* NSString+TextDirectionality.m in Sources */,
+				728359CE1CA207F00031DCB4 /* Code.swift in Sources */,
+				727CD5171C944CB8001C3F30 /* FormPlaceViewController.swift in Sources */,
+				72191B671CA96CEB0075E709 /* CoreDataProperties.swift in Sources */,
+				72E400991C959303000BE92A /* JVFloatLabeledTextView.m in Sources */,
+				727CD52B1C958C75001C3F30 /* Point.swift in Sources */,
+				7269B04B1C9775E000E58792 /* PointCell.swift in Sources */,
+				727CD4E51C943B26001C3F30 /* GoogleStreetViewPoint.xcdatamodeld in Sources */,
+				7283E0A91CB824CB00741021 /* InfoViewController.swift in Sources */,
+				728359CC1CA1FC050031DCB4 /* User.swift in Sources */,
+				727CD4DD1C943B26001C3F30 /* AppDelegate.swift in Sources */,
+				7269B03B1C95BCD600E58792 /* Extension.swift in Sources */,
+				727CD5191C944D66001C3F30 /* PointViewController.swift in Sources */,
+				7232FD3D1C95998D0019EC55 /* HRToast+UIView.swift in Sources */,
+				7269B0361C95B66900E58792 /* PulsingLayer.swift in Sources */,
+				727CD51B1C944E33001C3F30 /* Data.swift in Sources */,
+				728359C81CA1F56D0031DCB4 /* MailApi.swift in Sources */,
+				7283E0A71CB7FF8600741021 /* Area.swift in Sources */,
+				727CD5291C958C75001C3F30 /* Place.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727CD4EC1C943B26001C3F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727CD4F51C943B26001C3F30 /* GoogleStreetViewPointTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727CD4F71C943B26001C3F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727CD5001C943B26001C3F30 /* GoogleStreetViewPointUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		727CD4F21C943B26001C3F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 727CD4D81C943B26001C3F30 /* GoogleStreetViewPoint */;
+			targetProxy = 727CD4F11C943B26001C3F30 /* PBXContainerItemProxy */;
+		};
+		727CD4FD1C943B26001C3F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 727CD4D81C943B26001C3F30 /* GoogleStreetViewPoint */;
+			targetProxy = 727CD4FC1C943B26001C3F30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		727CD4E01C943B26001C3F30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				727CD4E11C943B26001C3F30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		727CD4E81C943B26001C3F30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				727CD4E91C943B26001C3F30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		727CD5021C943B26001C3F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		727CD5031C943B26001C3F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		727CD5051C943B26001C3F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF044B64C126CB7F85231EDF /* Pods-GoogleStreetViewPoint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GoogleStreetViewPoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.j7ss.GoogleStreetViewPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./GoogleStreetViewPoint/GoogleStreetViewPoint-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		727CD5061C943B26001C3F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC06986DF973D7639E4F3AF /* Pods-GoogleStreetViewPoint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GoogleStreetViewPoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.j7ss.GoogleStreetViewPoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./GoogleStreetViewPoint/GoogleStreetViewPoint-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		727CD5081C943B26001C3F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD2D5313DCB5121B2123A8D /* Pods-GoogleStreetViewPointTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoogleStreetViewPointTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.j7ss.GoogleStreetViewPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleStreetViewPoint.app/GoogleStreetViewPoint";
+			};
+			name = Debug;
+		};
+		727CD5091C943B26001C3F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9DBB44E075FCC69D30AE54 /* Pods-GoogleStreetViewPointTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoogleStreetViewPointTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.j7ss.GoogleStreetViewPointTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleStreetViewPoint.app/GoogleStreetViewPoint";
+			};
+			name = Release;
+		};
+		727CD50B1C943B26001C3F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4864C79035168886C453DA51 /* Pods-GoogleStreetViewPointUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GoogleStreetViewPointUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.j7ss.GoogleStreetViewPointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoogleStreetViewPoint;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		727CD50C1C943B26001C3F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDE43CFAD8661F962CB756A /* Pods-GoogleStreetViewPointUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GoogleStreetViewPointUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.j7ss.GoogleStreetViewPointUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoogleStreetViewPoint;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		727CD4D41C943B26001C3F30 /* Build configuration list for PBXProject "GoogleStreetViewPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727CD5021C943B26001C3F30 /* Debug */,
+				727CD5031C943B26001C3F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		727CD5041C943B26001C3F30 /* Build configuration list for PBXNativeTarget "GoogleStreetViewPoint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727CD5051C943B26001C3F30 /* Debug */,
+				727CD5061C943B26001C3F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		727CD5071C943B26001C3F30 /* Build configuration list for PBXNativeTarget "GoogleStreetViewPointTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727CD5081C943B26001C3F30 /* Debug */,
+				727CD5091C943B26001C3F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		727CD50A1C943B26001C3F30 /* Build configuration list for PBXNativeTarget "GoogleStreetViewPointUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727CD50B1C943B26001C3F30 /* Debug */,
+				727CD50C1C943B26001C3F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		727CD4E31C943B26001C3F30 /* GoogleStreetViewPoint.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				727CD4E41C943B26001C3F30 /* GoogleStreetViewPoint.xcdatamodel */,
+			);
+			currentVersion = 727CD4E41C943B26001C3F30 /* GoogleStreetViewPoint.xcdatamodel */;
+			path = GoogleStreetViewPoint.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 727CD4D11C943B26001C3F30 /* Project object */;
+}

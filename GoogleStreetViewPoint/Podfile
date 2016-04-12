@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'GoogleStreetViewPoint' do
+    
+    use_frameworks!
+    
+    pod "PulsingHalo"
+    pod 'Alamofire', '~> 2.0.0'
+
+end
+
+target 'GoogleStreetViewPointTests' do
+
+end
+
+target 'GoogleStreetViewPointUITests' do
+
+end
+
